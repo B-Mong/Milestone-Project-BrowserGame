@@ -2,11 +2,13 @@ body{
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
+    background-color: #5a4439 
 }
 header{
     max-width: 1280px;
+    max-height: 50px;
     padding-top: 1em;
-    border: 1px solid #000000;
+    padding-bottom: -1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,7 +17,7 @@ header{
 }
 .headtext{
     font-family: 'Press Start 2P', cursive;
-    font-size: 56px;
+    font-size: 42px;
     text-shadow: 3px 3px  #353535 ;
 
 }
@@ -34,12 +36,12 @@ header{
 
 
 
-/* Sidebar resolution: 300x800 */
+/* Sidebar resolution: 300x600 */
 .sidebar{
     min-width: 300px;
     max-width: 300px;
-    min-height: 800px;
-    max-height: 800px;
+    min-height: 600px;
+    max-height: 600px;
     background-color:  #353535 ;
     display: flex;
     border: 1px solid black;
@@ -67,13 +69,13 @@ li{
 #game{
     flex-grow: 1;
 }
-/* Content resolution: 980x800 */
+/* Content resolution: 980x600 */
 .content{
     flex-grow: 1;
     display: flex;
     border: 1px solid black;
     min-width: 980px;
     max-width: 980px;
-    min-height: 800px;
-    max-height: 800px;
+    min-height: 600px;
+    max-height: 600px;
 }
