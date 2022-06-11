@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Fruit Harvest</title>
 </head>
+
 <body>
-    <div id="header">
-        <h1>Fruit Harvest</h1>
-    </div>
-    <div id="main-container">
-        <div id="sidebar">
+    <header class="headtext">Fruit Harvest</header>
 
-        </div>
-        <div id="gameWindow">
-
-        </div>
+    <div class="main-container">
+        <aside class="sidebar">
+            <ul>
+                <li class="headlist">Instructions</li>
+                <li class="listcontext">In this dungeon crawler you will play as a cute GOO character! Your goal is to navigate the dungeon and to collect all 7 hidden fruits. Goodluck GOO!</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <canvas id="game"></canvas>
+        </main>
     </div>
 </body>
+
 </html>
