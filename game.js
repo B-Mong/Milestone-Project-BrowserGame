@@ -35,8 +35,6 @@ function appendCharacter(url, left, bottom){
 }
 // Sets the refresh rate of the game so it can be rendered. Chose 60hz since that is the most common refresh rate
 setInterval(gameRender, 1000/60)
-appendCharacter('assets/characterFruit/gooCharacter.png',1200 ,1000)
-
 appendImage('assets/dungeonAssets/bigSilver.png', 700, 1050)
 appendImage('assets/dungeonAssets/silverBox.png', 710, 1050)
 appendImage('assets/dungeonAssets/woodChest.png', 700, 1000)
@@ -96,3 +94,4 @@ appendImage('assets/dungeonAssets/litTorch.png', 1000, 1100)
 appendImage('assets/dungeonAssets/litTorch.png', 1000, 1050)
 appendImage('assets/dungeonAssets/litTorch.png', 1000, 850)
 appendImage('assets/dungeonAssets/litTorch.png', 1000, 1000)
+appendCharacter('assets/characterFruit/gooCharacter.png', 700, 1150)
