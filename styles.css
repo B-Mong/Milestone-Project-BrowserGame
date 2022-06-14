@@ -1,81 +1,56 @@
+/* default styles:
+background color: #5a4439;
+game map color: #3A2038
+color: black;
+font-family: 'Press Start 2P', cursive;
+grey #B3B3B3
+inventory color: #C7AA74
+*/
+
+
 body{
-    min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    background-color: #5a4439 
+    background-color: #5a4439;
+    height: 100vh;
 }
-header{
-    max-width: 1280px;
-    max-height: 50px;
-    padding-top: 1em;
-    padding-bottom: -1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    background-color: #5a4439 
-}
-.headtext{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 42px;
-    text-shadow: 3px 3px  #353535 ;
-
-}
-.main-container{
-    min-height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-/* Sidebar resolution: 300x600 */
-.sidebar{
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 600px;
-    max-height: 600px;
-    background-color:  #353535 ;
-    display: flex;
-    border: 1px solid black;
-}
-
-/* Sidebar */
-li{
-    list-style: none;
-    font-family: 'Press Start 2P', cursive;
-    margin-left: -1em
-
-}
-.headlist{
-    text-align: center;
-    font-size: 18px;
-    display: inline-block;
-    
-}
-.listcontext{
-    font-size: 18px;
-    padding-top: 10px;
-}
-
-/* Game Window*/
 #game{
-    flex-grow: 1;
+    border: 8px solid black
 }
-/* Content resolution: 980x600 */
-.content{
-    flex-grow: 1;
+.container{
     display: flex;
-    border: 1px solid black;
-    min-width: 980px;
-    max-width: 980px;
-    min-height: 600px;
-    max-height: 600px;
+    flex-direction: row;
+
+}
+/* Sidebar*/
+.sidebar{
+    width: 33%;
+    background-color: #C7AA74;
+    border: 8px solid black
+}
+/* Sidebar Header */
+.sidebar h1 {
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+}
+/* Sidebar text */
+.sidebar p {
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+
+
+/* inventory */
+.inventory{
+    width: 30%;
+    background-color: #C7AA74;
+    border: 8px solid black;
+}
+.inventory h1 {
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
 }
