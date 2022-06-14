@@ -12,5 +12,6 @@ function gameRender(){
     tileMap.draw(canvas,ctx);
 }
 
+// Sets the refresh rate of the game so it can be rendered. Chose 60hz since that is the most common refresh rate
 setInterval(gameRender, 1000/60)
 
