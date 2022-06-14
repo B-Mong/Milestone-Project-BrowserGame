@@ -31,7 +31,13 @@ body{
     font-size: 3.5em;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-
+    text-shadow: 4px 4px darkgrey;
+}
+.sidebar h2 {
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px darkgrey;
 }
 /* Sidebar text */
 .sidebar p {
@@ -52,5 +58,6 @@ body{
     font-size: 3.5em;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-
+    text-shadow: 4px 4px darkgrey;
 }
+
