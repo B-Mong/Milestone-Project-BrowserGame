@@ -12,8 +12,18 @@ function gameRender(){
     tileMap.draw(canvas,ctx);
 }
 
-// Function that appends images to the DOM based on the X and Y coordinates
+// Function that appends images to the DOM
 function appendImage(url, left, bottom){
+    let image = document.createElement('img')
+    image.src = url
+    image.style.position = 'relative'
+    image.style.left = left + 'px'
+    image.style.bottom = bottom + 'px'
+    image.style.zIndex = "0"
+    document.body.append(image)
+    return image
+}
+function appendCharacter(url, left, bottom){
     let image = document.createElement('img')
     image.src = url
     image.style.position = 'relative'
@@ -23,15 +33,66 @@ function appendImage(url, left, bottom){
     document.body.append(image)
     return image
 }
-
 // Sets the refresh rate of the game so it can be rendered. Chose 60hz since that is the most common refresh rate
 setInterval(gameRender, 1000/60)
+appendCharacter('assets/characterFruit/gooCharacter.png',1200 ,1000)
 
-
-// game canvas resolution 720 x 1072
-
-
-// adding objects to the game
-appendImage('assets/dungeonAssets/bigSilver.png', 680, 1070)
-appendImage('assets/dungeonAssets/silverBox.png', 698, 1070)
-
+appendImage('assets/dungeonAssets/bigSilver.png', 700, 1050)
+appendImage('assets/dungeonAssets/silverBox.png', 710, 1050)
+appendImage('assets/dungeonAssets/woodChest.png', 700, 1000)
+appendImage('assets/dungeonAssets/silverBox.png', 600, 1000)
+appendImage('assets/dungeonAssets/web.png', 490, 1050)
+appendImage('assets/dungeonAssets/web.png', 425, 1000)
+appendImage('assets/dungeonAssets/litTorch.png', 425, 1100)
+appendImage('assets/dungeonAssets/litTorch.png', 425, 1100)
+appendImage('assets/dungeonAssets/web.png', 300, 700)
+appendImage('assets/dungeonAssets/web.png', 235, 600)
+appendImage('assets/dungeonAssets/silverBox.png', 265, 675)
+appendImage('assets/dungeonAssets/silverBox.png', 300, 620)
+appendImage('assets/dungeonAssets/silverBox.png', 210, 600)
+appendImage('assets/dungeonAssets/unlitTorch.png', 130, 615)
+appendImage('assets/dungeonAssets/metal.png', 170, 630)
+appendImage('assets/dungeonAssets/silverBox.png', 180, 800)
+appendImage('assets/dungeonAssets/silverBox.png', 50, 800)
+appendImage('assets/dungeonAssets/litTorch.png', 4, 700)
+appendImage('assets/dungeonAssets/bones.png', 20, 900)
+appendImage('assets/dungeonAssets/web.png', -116, 400)
+appendImage('assets/dungeonAssets/web.png', -180, 350)
+appendImage('assets/dungeonAssets/web.png', -245, 300)
+appendImage('assets/dungeonAssets/web.png', -308, 200)
+appendImage('assets/dungeonAssets/web.png', -375, 75)
+appendImage('assets/dungeonAssets/silverBox.png', -400, 500)
+appendImage('assets/dungeonAssets/silverBox.png', -375, 475)
+appendImage('assets/dungeonAssets/silverBox.png', -375, 300)
+appendImage('assets/dungeonAssets/silverBox.png', -300, 400)
+appendImage('assets/dungeonAssets/silverBox.png', -500, 410)
+appendImage('assets/dungeonAssets/silverBox.png', -550, 250)
+appendImage('assets/dungeonAssets/silverBox.png', -500, 102)
+appendImage('assets/dungeonAssets/silverBox.png', -500, 180)
+appendImage('assets/dungeonAssets/box.png', -500, 500)
+appendImage('assets/dungeonAssets/box.png', -500, 100)
+appendImage('assets/dungeonAssets/box.png', -400, 100)
+appendImage('assets/dungeonAssets/silverBox.png', -300, 100)
+appendImage('assets/dungeonAssets/litTorch.png', -300, 100)
+appendImage('assets/dungeonAssets/litTorch.png', -600, 100)
+appendImage('assets/dungeonAssets/bones.png', -300, 100)
+appendImage('assets/dungeonAssets/bones.png', -300, 100)
+appendImage('assets/dungeonAssets/bones.png', -300, 200)
+appendImage('assets/dungeonAssets/bones.png', -500, 400)
+appendImage('assets/dungeonAssets/bones.png', -500, 600)
+appendImage('assets/dungeonAssets/bones.png', -650, 220)
+appendImage('assets/dungeonAssets/bones.png', -800, 710)
+appendImage('assets/dungeonAssets/bones.png', -1000, 400)
+appendImage('assets/dungeonAssets/bones.png', -1000, 500)
+appendImage('assets/dungeonAssets/bones.png', -700, 340)
+appendImage('assets/dungeonAssets/bones.png', -900, 1000)
+appendImage('assets/dungeonAssets/bones.png', -800, 800)
+appendImage('assets/dungeonAssets/bones.png', -700, 900)
+appendImage('assets/dungeonAssets/bones.png', 1200, 900)
+appendImage('assets/dungeonAssets/bones.png', 1000, 1000)
+appendImage('assets/dungeonAssets/bones.png', 1000, 1100)
+appendImage('assets/dungeonAssets/bones.png', 1100, 1100)
+appendImage('assets/dungeonAssets/litTorch.png', 1000, 1100)
+appendImage('assets/dungeonAssets/litTorch.png', 1000, 1050)
+appendImage('assets/dungeonAssets/litTorch.png', 1000, 850)
+appendImage('assets/dungeonAssets/litTorch.png', 1000, 1000)
