@@ -13,13 +13,13 @@ body{
     height: 100vh;
 }
 #game{
-    border: 8px solid black
+    border: 8px solid black;
 }
 .container{
     display: flex;
     flex-direction: row;
-
 }
+
 /* Sidebar*/
 .sidebar{
     width: 33%;
@@ -73,3 +73,15 @@ body{
     text-align: center;
 }
 
+
+
+#replayButton{
+    background-color: #C7AA74;
+    height: 100px;
+    width: 300px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px darkgrey;
+    border: 10px solid rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align: center;
+}
