@@ -50,12 +50,10 @@ function move(element) {
             if(e.key === 'ArrowDown'){
                 direction = 'down'
             }
-            callback(direction)
         })
         
         document.addEventListener('keyup', function(e){
             direction = null
-            callback(direction)
         })
     }
     // Synonomous function naming
