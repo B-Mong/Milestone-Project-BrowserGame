@@ -6,7 +6,6 @@ function congratulateUser() {
     win.appendChild(update)
     let replay = document.createElement("button") // Adds button to replay game
     replay.setAttribute("id", "replayButton")
-    replay.style
     replay.innerText = 'Replay!'
     replay.addEventListener("click", () => {
         location.reload()   // Refreshes the current page
