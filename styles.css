@@ -85,3 +85,15 @@ body{
     font-size: 1.5em;
     text-align: center;
 }
+
+#mutebutton{
+    background-color: #C7AA74;
+    height: 60px;
+    width: 200px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px darkgrey;
+    border: 10px solid rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 2em;
+}
