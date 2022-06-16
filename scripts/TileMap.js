@@ -9,7 +9,7 @@ export default class TileMap {
         this.bottomWall = this.#image("bottomWall.png");
         this.pathway = this.#image("pathway.png");
     }
-    //method that grabs the image based on the filepath specified and returns it to #image
+    //method that grabs the image based on the filepath specified and returns it to class TileMap
     #image(fileName){
         const img = new Image();
         img.src = `assets/floorTile/${fileName}`;
