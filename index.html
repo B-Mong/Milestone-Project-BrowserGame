@@ -13,12 +13,18 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="sidebar">
             <h1>Fruit Harvest</h1>
             <p>In this game you will use the character to collect all 6 hidden fruits inside of the dungeon!</p>
             <h2>Controls</h2>
             <p>Use the arrows keys to move the character! Double click on the fruit once you are close to it!</p>
+            <div class="audioplayer">
+                <audio loop controls>
+                    <source src="./assets/Cavesofsorrow.mp3" type="audio/mp3">
+                </audio>
+            </div>
         </div>
         <div class="game-window">
             <canvas id="game"></canvas>
@@ -26,7 +32,8 @@
         <div class="inventory">
             <h1>Fruits Collected</h1>
             <h2>Attributions</h2>
-            <p id="attri">Pixel_Poem @ Itch.io</p>
+            <p>Pixel_Poem @ Itch.io</p>
+            <p id="attri">Alexandr Zhelanov (Game Audio)</p>
         </div>
     </div>
 <script src="./scripts/game.js" type="module"></script>
