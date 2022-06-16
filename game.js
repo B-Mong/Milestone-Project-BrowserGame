@@ -1,4 +1,4 @@
-import TileMap from './TileMap.js';
+import TileMap from './TileMap.js'; 
 
 // selects the canvas by the HTML ID and sets the context of the canvas to a 2d image
 const canvas = document.getElementById("game");
@@ -23,18 +23,12 @@ function appendImage(url, left, bottom){
     document.body.append(image)
     return image
 }
-function appendCharacter(url, left, bottom){
-    let image = document.createElement('img')
-    image.src = url
-    image.style.position = 'relative'
-    image.style.left = left + 'px'
-    image.style.bottom = bottom + 'px'
-    image.style.zIndex = "1"
-    document.body.append(image)
-    return image
-}
+
+
 // Sets the refresh rate of the game so it can be rendered. Chose 60hz since that is the most common refresh rate
 setInterval(gameRender, 1000/60)
+
+
 // Appends images to the map
 appendImage('assets/dungeonAssets/bigSilver.png', 700, 1050)
 appendImage('assets/dungeonAssets/silverBox.png', 710, 1050)
@@ -95,3 +89,4 @@ appendImage('assets/dungeonAssets/litTorch.png', 1000, 1100)
 appendImage('assets/dungeonAssets/litTorch.png', 1000, 1050)
 appendImage('assets/dungeonAssets/litTorch.png', 1000, 850)
 appendImage('assets/dungeonAssets/litTorch.png', 1000, 1000)
+
