@@ -1,22 +1,35 @@
-
-// Need code to check for if inventory == 6 then execute code below
-
-
 // Congratulates user
-let win = document.getElementById("attri");
-let update = document.createElement("p");
-update.textContent = 'You collected all the fruit!'
-win.appendChild(update)
-// Adds button to replay game
-let replay = document.createElement("button")
-replay.setAttribute("id","replayButton")
-replay.style
-replay.innerText = 'Replay!'
-replay.addEventListener("click",() =>{
-    location.reload()
-})
-win.appendChild(replay)
+function congratulateUser() {
+    let win = document.getElementById("attri");
+    let update = document.createElement("p");
+    update.textContent = 'You collected all the fruit!'
+    win.appendChild(update)
+    let replay = document.createElement("button") // Adds button to replay game
+    replay.setAttribute("id", "replayButton")
+    replay.style
+    replay.innerText = 'Replay!'
+    replay.addEventListener("click", () => {
+        location.reload()   // Refreshes the current page
+    })
+    win.appendChild(replay)
+}
 
-// Checks how many fruit are inside of inventory
-let element = document.getElementById("inventory");
-let numberOfFruit = element.getElementsByTagName('*').length
+//Checks for if elementNumber == 6 then executes the winning screen
+async function checkInventory() {
+
+    let element = document.getElementById("inventory");
+    let numberOfFruit = element.getElementsByTagName('*').length
+    let elementNumber = numberOfFruit
+
+    let promise = new Promise((resolve, reject) => {
+        if (elementNumber == 6) {
+            resolve(congratulateUser())
+        } else {
+            setTimeout(()=>{
+                reject(checkInventory())
+            }, 3000)
+        }
+    });
+}
+
+checkInventory()
