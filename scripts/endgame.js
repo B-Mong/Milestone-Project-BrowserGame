@@ -25,7 +25,7 @@ function checkInventory() {
             resolve(congratulateUser())
         } else {
             setTimeout(()=>{
-                reject(checkInventory())
+                reject(checkInventory())              // If this promise rejects then it will execute the function of checkInventory repeatedly until it resolves
             }, 3000)
         }
     });
