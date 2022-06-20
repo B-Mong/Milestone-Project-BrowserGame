@@ -14,7 +14,7 @@ function congratulateUser() {
 }
 
 //Checks for if elementNumber == 6 then executes the winning screen
-async function checkInventory() {
+function checkInventory() {
 
     let element = document.getElementById("inventory");
     let numberOfFruit = element.getElementsByTagName('*').length
