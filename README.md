@@ -1,4 +1,4 @@
-# Browser Game (Dungeon Crawler)
+# 2D Browser Game
 ![Game Banner](./assets/Game%20Banner.png)
 ## Introduction
 This project was created while attending UNLV Software Development Bootcamp at the end of the Web Design section. 
